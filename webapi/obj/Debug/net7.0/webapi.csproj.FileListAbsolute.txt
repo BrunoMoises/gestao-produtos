@@ -31,3 +31,5 @@ C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\obj\Debug\net
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\obj\Debug\net7.0\webapi.pdb
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\obj\Debug\net7.0\webapi.genruntimeconfig.cache
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\obj\Debug\net7.0\ref\webapi.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
