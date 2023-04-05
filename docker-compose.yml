@@ -1,0 +1,16 @@
+version: '3'
+services:
+  webapi:
+    build:
+      context: ./webapi
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - vueapp
+  vueapp:
+    build:
+      context: ./vueapp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
