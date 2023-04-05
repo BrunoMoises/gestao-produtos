@@ -1,16 +1,40 @@
 version: '3'
 services:
-  webapi:
-    build:
-      context: ./webapi
-      dockerfile: Dockerfile
+#  webapi:
+#    build:
+#      context: ./webapi
+#      dockerfile: Dockerfile
+#    ports:
+#      - "5000:80"
+#    depends_on:
+#      - vueapp
+#  vueapp:
+#    build:
+#      context: ./vueapp
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8080:8080"
+
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: produtos
     ports:
-      - "5000:80"
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+  pgadmin-compose:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "postgres@email.com"
+      PGADMIN_DEFAULT_PASSWORD: "postgres"
+    ports:
+      - "15432:80"
     depends_on:
-      - vueapp
-  vueapp:
-    build:
-      context: ./vueapp
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
+      - postgres-compose
+
+volumes:
+  pg-data:
