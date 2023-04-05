@@ -43,3 +43,12 @@ C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Npgsql.dll
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\bin\Debug\net7.0\webapi.xml
+C:\Users\Bruno\OneDrive\Documentos\Projetos\gestao-produtos\webapi\obj\Debug\net7.0\webapi.xml

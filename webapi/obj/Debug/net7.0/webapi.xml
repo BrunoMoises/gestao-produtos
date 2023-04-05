@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi</name>
+    </assembly>
+    <members>
+        <member name="M:webapi.Controllers.ProdutoController.AdicionaProduto(webapi.Data.Dtos.CreateProdutoDto)">
+            <summary>
+            Adiciona um produto ao banco de dados
+            </summary>
+            <param name="produtoDto">Objeto com os campos necessários para criação de um produto</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:webapi.Controllers.ProdutoController.RecuperaProdutos(System.Int32,System.Int32)">
+            <summary>
+            Busca todos os produtos
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso a busca tenha sucesso</response>
+        </member>
+        <member name="M:webapi.Controllers.ProdutoController.RecuperaProdutoPorId(System.Int32)">
+            <summary>
+            Busca produto por ID
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca tenha sucesso</response>
+        </member>
+        <member name="M:webapi.Controllers.ProdutoController.AtualizaProduto(System.Int32,webapi.Data.Dtos.UpdateProdutoDto)">
+            <summary>
+            Atualiza dados de um produto
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização tenha sido feita com sucesso</response>
+        </member>
+        <member name="M:webapi.Controllers.ProdutoController.DeletaProduto(System.Int32)">
+            <summary>
+            Deleta produto
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="202">Caso a deleção tenha sido feita com sucesso</response>
+        </member>
+        <member name="T:webapi.Migrations.InitialMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Migrations.InitialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Migrations.InitialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Migrations.InitialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

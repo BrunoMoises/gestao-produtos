@@ -19,7 +19,7 @@ namespace webapi.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     titulo = table.Column<string>(type: "text", nullable: false),
                     descricao = table.Column<string>(type: "text", nullable: false),
-                    imagem = table.Column<byte>(type: "smallint", nullable: false)
+                    valor = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {

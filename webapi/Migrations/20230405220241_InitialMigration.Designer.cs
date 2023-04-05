@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace webapi.Migrations
 {
     [DbContext(typeof(ProdutoContext))]
-    [Migration("20230405175737_InitialMigration")]
+    [Migration("20230405220241_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -37,14 +37,14 @@ namespace webapi.Migrations
                         .HasColumnType("text")
                         .HasColumnName("descricao");
 
-                    b.Property<byte>("Imagem")
-                        .HasColumnType("smallint")
-                        .HasColumnName("imagem");
-
                     b.Property<string>("Titulo")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("titulo");
+
+                    b.Property<float>("Valor")
+                        .HasColumnType("real")
+                        .HasColumnName("valor");
 
                     b.HasKey("Id");
 

@@ -34,15 +34,14 @@ namespace webapi.Migrations
                         .HasColumnType("text")
                         .HasColumnName("descricao");
 
-                    b.Property<byte[]>("Imagem")
-                        .IsRequired()
-                        .HasColumnType("bytea")
-                        .HasColumnName("imagem");
-
                     b.Property<string>("Titulo")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("titulo");
+
+                    b.Property<float>("Valor")
+                        .HasColumnType("real")
+                        .HasColumnName("valor");
 
                     b.HasKey("Id");
 
