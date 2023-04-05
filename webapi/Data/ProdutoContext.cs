@@ -3,17 +3,16 @@ using webapi.Model;
 
 public class ProdutoContext : DbContext
 {
-    private readonly IConfiguration configuration;
+    public ProdutoContext(DbContextOptions<ProdutoContext> opts) : base(opts)
+    {
+        
+    }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        builder.Entity<Produto>()
+            .HasKey(produto =>  produto.Id );
+    }
+
     public DbSet<Produto> Produtos { get; set; }
-    
-    public ProdutoContext(IConfiguration configuration)
-    {
-        this.configuration = configuration;
-
-    }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseNpgsql(configuration.GetConnectionString("DBConnection"));
-    }
 }
