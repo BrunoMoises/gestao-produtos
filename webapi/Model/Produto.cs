@@ -19,6 +19,6 @@ public class Produto
     [Column("descricao")]
     public string Descricao { get; set; }
 
-    [Column("imagem")]
-    public byte[] Imagem { get; set; }
+    [Column("valor")]
+    public float Valor { get; set; }
 }
