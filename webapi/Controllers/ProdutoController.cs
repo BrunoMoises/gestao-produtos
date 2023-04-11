@@ -44,7 +44,7 @@ public class ProdutoController : ControllerBase
         ([FromQuery] int skip = 0,
         [FromQuery] int take = 50)
     {
-        return _mapper.Map<List<ReadProdutoDto>>(_context.Produtos.Skip(skip).Take(take)).ToList();
+        return _mapper.Map<List<ReadProdutoDto>>(_context.Produtos.Skip(skip).Take(take).ToList());
     }
 
     /// <summary>
